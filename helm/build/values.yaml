@@ -1,0 +1,15 @@
+app:
+  name: hoplite_backend-poi-backend-app
+  namespace: hoplite_backend
+  cluster: .apps.rosa-pzz6v.9nln.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh23-demo/hoplite_backend-backend
+  org: rhdh23-demo
+  name: hoplite_backend-backend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: hoplite_backend/poi-backend-app
+  tag: latest
